@@ -1,0 +1,20 @@
+[class*='icon-'] {
+  display: block;
+}
+
+[class*='icon-']::before {
+  /* faz o icone aparecer */
+  content: '';
+  display: block;
+
+  /* tamanho do icone */
+  width: 1.5em;
+  height: 1.5em;
+
+  /* nao repetir */
+  background-repeat: no-repeat;
+
+  /* caixa com o tamanho certo */
+  background-size: contain !important;
+  -webkit-background-size: contain;
+}

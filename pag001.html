@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veterinária</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header>
-    <nav>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icon.css" />
+
+    <script src="senha.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
         <a href="#">Quem somos</a>
         <a href="#">Contato</a>
-    </nav>
-   </header> 
-   <main>
-        <p class="login">Login</p>
-        <form action="cadastro.php" method="post" autocomplete="on">
-            <p>Usuário</p>
-            <label for="iusu"></label>
-            <input type="text" name="usu" id="iusu" placeholder="E-mail ou nome de usuário" required autocomplete="username">
-            <p>Senha</p>
-            <label for="isen"></label>
-            <input type="password" name="sen" id="isen" placeholder="Digite a sua senha" required autocomplete="current-password">
-            <input type="submit" value="Entrar">
-        </form>
-        <p><a href="#">Esqueceu a senha?</a></p>
-        <p><a href="pag002.html">Ainda não possui cadastro?</a></p>
-   </main>
-</body>
+      </nav>
+    </header>
+    <main>
+      <p class="login">Login</p>
+      <form action="cadastro.php" method="post" autocomplete="on">
+        <p>Usuário</p>
+        <label for="iusu"></label>
+        <input
+          type="text"
+          name="usu"
+          id="iusu"
+          placeholder="E-mail ou nome de usuário"
+          required
+          autocomplete="username"
+        />
+        <p>Senha</p>
+        <label for="isen"></label>
+
+        <div class="content-password">
+          <input
+            type="password"
+            name="sen"
+            id="isen"
+            placeholder="Digite a sua senha"
+            required
+            autocomplete="current-password"
+          />
+
+          <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+        </div>
+
+        <input type="submit" value="Entrar" />
+      </form>
+      <p><a href="#">Esqueceu a senha?</a></p>
+      <p><a href="pag002.html">Ainda não possui cadastro?</a></p>
+    </main>
+  </body>
 </html>
