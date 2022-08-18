@@ -2,124 +2,107 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-  --cor00: #f0f7f4;
-  --cor01: #9cf6f677;
-  --cor02: #0c7489;
-  --cor03: #13505b;
-  --cor04: #a78682;
-  --cor05: #040404;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-  --fonte01: 'Roboto', sans-serif;
-  --fonte02: Arial, Helvetica, sans-serif;
+:root {
+    --cor00: #F0F7F4;
+    --cor01: #9cf6f677;
+    --cor02: #0C7489;
+    --cor03: #13505B;
+    --cor04: #A78682;
+    --cor05: #040404;
+
+    --fonte01: 'Roboto', sans-serif;
+    --fonte02: Arial, Helvetica, sans-serif;
+    --fonte03: 'Inter', sans-serif;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  background-color: var(--cor00);
-  font-family: var(--fonte01);
+    background-color:var(--cor00);
+    font-family: var(--fonte01);
 }
 
 header {
-  min-height: 150px;
-  padding-top: 20px;
-  font-weight: bold;
+    min-height: 150px;
+    padding-top: 20px;
+    font-weight: bold;
 }
 
-header > nav > p,
-a {
-  color: #040404;
-  padding: 30px;
-  text-decoration: none;
+header > nav > p, a {
+    color:#040404;
+    padding: 30px;
+    text-decoration: none;
 }
 
 main {
-  margin: 20px 150px 20px 20px;
-  background-color: var(--cor03);
-  min-width: 320px;
-  max-width: 400px;
-  height: 500px;
-  color: white;
-  padding: 30px;
-  border: 1px solid black;
-  border-radius: 20px;
-  box-shadow: 1px 0px #00000079;
-  text-align: center;
-  float: right;
+    margin: 20px 150px 20px 20px;
+    background-color: var(--cor03);
+    min-width: 320px;
+    max-width: 400px;
+    height: 500px;
+    color: white;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 0px #00000079;
+    text-align: center;
+    float: right;
 }
 
 main > p {
-  padding: 20px;
+    padding: 20px;
 }
 
 main > p > a {
-  text-decoration: none;
-  color: var(--cor04);
+    text-decoration:none;
+    color: var(--cor04);
 }
 
 main > p.login {
-  padding: 20px;
-  font-weight: bold;
-  font-size: 2em;
-  text-shadow: 1px 2px #00000057;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 2px  #00000057;
 }
 
-/* -----------------------------ICON EYES PASSWORD-------------------------------------------- */
-
-/* define o icone a aparecer */
-.icon-olho:before {
-  background-image: url(svgs/eye-see-show-svgrepo-com.svg);
-
-  color: red !important;
-
-  position: relative;
-  right: 30px;
+form {
+    width: fit-content;
+    margin: 0px auto;
 }
 
-/* define o icone a aparecer */
-.icon-olho-esconder:before {
-  background-image: url(/svgs/disable-eye-inactive-svgrepo-com.svg);
-  position: relative;
-  right: 30px;
-}
-
-/* display flex para ficarem um do lado do outro 
-
-aling items para ficarem na mesma altura
-
-width fit content para o tamanho da caixa ser = o tamanho do conteudo certinho
-
-margin para centralizar
-
-transform para ele andar 12px para a direita pq tava dando um probleminha com o icon*/
-
-.content-password {
-  display: flex;
-  align-items: center;
-
-  width: fit-content;
-  margin: 0 auto;
-
-  transform: translateX(12px);
-}
-
-/* Padding right para que nos ultimos 33px do input não apareça as senhas que ficariam em cima do icone de olho */
-#isen {
-  padding-right: 33px;
-  box-sizing: border-box;
-}
-
-/* ----------------------------INPUT------------------------------------------ */
-
-/* defini um tamanho para os inputs por que eles ficavam com alturas diferentes por causa do icone
-
-e ficavam com largura diferente por causa dos paddings*/
 input {
-  width: 200px;
-  height: 20px;
+    height: 40px;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 0px;
+    background-color: #e6f4f1;
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+label {
+    float: left;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.botao {
+    background-color: #64b6cd;
+    height: 50px;
+    font-family: var(--fonte03);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #00c6ff;
+    color: var(--cor00);
 }

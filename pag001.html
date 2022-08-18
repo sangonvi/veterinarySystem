@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+PAG001
+
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -21,36 +23,31 @@
     <main>
       <p class="login">Login</p>
       <form action="cadastro.php" method="post" autocomplete="on">
-        <p>Usuário</p>
-        <label for="iusu"></label>
+        <label for="iusu">Usuário</label><br>
         <input
           type="text"
           name="usu"
           id="iusu"
           placeholder="E-mail ou nome de usuário"
           required
-          autocomplete="username"
-        />
-        <p>Senha</p>
-        <label for="isen"></label>
+          autocomplete="username"/>
 
         <div class="content-password">
-          <input
-            type="password"
-            name="sen"
-            id="isen"
-            placeholder="Digite a sua senha"
-            required
-            autocomplete="current-password"
-          />
+            <label for="isen">Senha</label><br>
+            <input
+                type="password"
+                name="sen"
+                id="isen"
+                placeholder="Digite a sua senha"
+                required
+                autocomplete="current-password"/>
 
-          <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+            <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
         </div>
 
-        <input type="submit" value="Entrar" />
+        <input type="submit" value="Entrar" class="botao"/>
       </form>
       <p><a href="#">Esqueceu a senha?</a></p>
       <p><a href="pag002.html">Ainda não possui cadastro?</a></p>
     </main>
   </body>
-</html>
