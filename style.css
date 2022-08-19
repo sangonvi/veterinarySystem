@@ -5,42 +5,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --cor00: #F0F7F4;
-    --cor01: #9cf6f677;
-    --cor02: #0C7489;
-    --cor03: #13505B;
-    --cor04: #A78682;
-    --cor05: #040404;
+  --cor00: #f0f7f4;
+  --cor01: #9cf6f677;
+  --cor02: #0c7489;
+  --cor03: #13505b;
+  --cor04: #a78682;
+  --cor05: #040404;
 
-    --fonte01: 'Roboto', sans-serif;
-    --fonte02: Arial, Helvetica, sans-serif;
-    --fonte03: 'Inter', sans-serif;
+  --fonte01: 'Roboto', sans-serif;
+  --fonte02: Arial, Helvetica, sans-serif;
+  --fonte03: 'Inter', sans-serif;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color:var(--cor00);
-    font-family: var(--fonte01);
+  background-color: var(--cor00);
+  font-family: var(--fonte01);
 }
 
 header {
-    min-height: 150px;
-    padding-top: 20px;
-    font-weight: bold;
+  min-height: 150px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-header nav p, a {
-    color:#040404;
-    padding: 30px;
-    text-decoration: none;
+header nav p,
+a {
+  color: #040404;
+  margin: 30px;
+  text-decoration: none;
 }
 
 main.conta {
- 
   background-color: var(--cor03);
   color: white;
   padding: 30px;
@@ -52,10 +52,10 @@ main.conta {
 }
 
 main.conta#antigo {
-    margin: 20px 150px 20px 20px;
-    min-width: 320px;
-    max-width: 400px;
-    height: 500px;
+  margin: 20px 150px 20px 20px;
+  min-width: 320px;
+  max-width: 400px;
+  height: 500px;
 }
 
 main.conta#novo {
@@ -66,58 +66,104 @@ main.conta#novo {
 }
 
 main.conta p {
-    padding: 20px;
+  margin: 20px;
 }
 
 main.conta p a {
-    text-decoration:none;
-    color: var(--cor04);
+  text-decoration: none;
+  color: var(--cor04);
 }
 
 main.conta p.login {
-    padding: 20px;
-    font-weight: bold;
-    font-size: 2em;
-    text-shadow: 1px 2px  #00000057;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 1px 2px #00000057;
 }
 
 form {
-    width: fit-content;
-    margin: 0px auto;
-    margin-bottom: 6px;
-    display: flex;
-    flex-direction:column;
-    float: center;
-    text-align: left;
-    padding: 10px;
-    
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  float: center;
+  text-align: left;
+  padding: 10px;
 }
 
+form .campo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  display: flex; /*deixar um do lado do outro para colocar gap*/
+
+  flex-direction: column; /*deixar um embaixo do  outro */
+
+  gap: 5px; /*espaçamento entre os itens de dentro da caixa*/
+}
 
 form input {
-    height: 40px;
-    border-radius: 8px;
-    width: 250px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 0px;
-    background-color: #e6f4f1;
-}
+  height: 40px;
+  border-radius: 8px;
+  width: 250px;
 
-input::-webkit-input-placeholder {
-    padding-left: 10px;
+  border: 0px;
+  background-color: #e6f4f1;
+  padding-left: 7px;
 }
-
 
 .botao {
-    background-color: #64b6cd;
-    height: 50px;
-    font-family: var(--fonte03);
-    font-size: 1.1em;
-    font-weight: bold;
+  background-color: #64b6cd;
+  height: 50px;
+  font-family: var(--fonte03);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--cor00);
 }
 
 .botao:hover {
-    background-color: #00c6ff;
-    color: var(--cor00);
+  background-color: #00c6ff;
+  color: black;
+}
+
+.botao-entrar {
+  margin-top: 10px;
+}
+/* -----------------------------------------ICONS EYES--------------------------------------------------------- */
+/* ------ICON EYES PASSWORD------- */
+.icon-olho,
+.icon-olho-esconder {
+  width: 0;
+}
+
+/* define o icone a aparecer */
+.icon-olho:before {
+  background-image: url(svgs/eye-see-show-svgrepo-com.svg);
+
+  color: red !important;
+
+  position: relative;
+  right: 30px;
+}
+
+/* define o icone a aparecer */
+.icon-olho-esconder:before {
+  background-image: url(svgs/disable-eye-inactive-svgrepo-com.svg);
+  position: relative;
+  right: 30px;
+}
+
+/* display flex para ficarem um do lado do outro 
+
+aling items para ficarem na mesma altura*/
+.align-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Padding right para que nos ultimos 33px do input não apareça as senhas que ficariam em cima do icone de olho */
+#isen {
+  padding-right: 33px;
+  box-sizing: border-box;
 }

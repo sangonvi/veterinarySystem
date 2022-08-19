@@ -20,34 +20,40 @@
     </header>
     <main class="conta" id="antigo">
       <p class="login">Login</p>
-      <form action="cadastro.php" method="post" autocomplete="on">
-        <div class="usuario">
-          <label for="iusu">Usuário</label><br>
+      <form action="login" method="post" autocomplete="on">
+        <div class="campo">
+          <label for="inputUser">Usuário</label>
           <input
             type="text"
-            name="usu"
-            id="iusu"
+            name="inputUser"
+            id="inputUser"
             placeholder="E-mail ou nome de usuário"
             required
-            autocomplete="username"/>
+            autocomplete="username"
+          />
         </div>
 
-        <div class="content-password">
-            <label for="isen">Senha</label><br>
+        <div class="campo">
+          <label for="inpuPassword">Senha</label>
+
+          <div class="align-icon">
             <input
-                type="password"
-                name="sen"
-                id="isen"
-                placeholder="Digite a sua senha"
-                required
-                autocomplete="current-password"/>
+              type="password"
+              name="inpuPassword"
+              id="inpuPassword"
+              placeholder="Digite a sua senha"
+              required
+              autocomplete="current-password"
+            />
 
             <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+          </div>
         </div>
 
-        <input type="submit" value="Entrar" class="botao"/>
+        <input type="submit" value="Entrar" class="botao botao-entrar" />
       </form>
       <p><a href="#">Esqueceu a senha?</a></p>
       <p><a href="pag002.html">Ainda não possui cadastro?</a></p>
     </main>
   </body>
+</html>
