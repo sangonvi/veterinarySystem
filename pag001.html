@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-PAG001
-
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -20,17 +18,19 @@ PAG001
         <a href="#">Contato</a>
       </nav>
     </header>
-    <main>
+    <main class="conta" id="antigo">
       <p class="login">Login</p>
       <form action="cadastro.php" method="post" autocomplete="on">
-        <label for="iusu">Usuário</label><br>
-        <input
-          type="text"
-          name="usu"
-          id="iusu"
-          placeholder="E-mail ou nome de usuário"
-          required
-          autocomplete="username"/>
+        <div class="usuario">
+          <label for="iusu">Usuário</label><br>
+          <input
+            type="text"
+            name="usu"
+            id="iusu"
+            placeholder="E-mail ou nome de usuário"
+            required
+            autocomplete="username"/>
+        </div>
 
         <div class="content-password">
             <label for="isen">Senha</label><br>
@@ -47,7 +47,7 @@ PAG001
 
         <input type="submit" value="Entrar" class="botao"/>
       </form>
-      <p><a href="#">Esqueceu a senha??</a></p>
+      <p><a href="#">Esqueceu a senha?</a></p>
       <p><a href="pag002.html">Ainda não possui cadastro?</a></p>
     </main>
   </body>

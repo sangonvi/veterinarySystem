@@ -14,12 +14,27 @@
             <a href="#">Contato</a>
         </nav>
        </header> 
-       <main>
-        <p>Digite o seu nome completo</p>
-        <p>Digite o seu e-mail</p>
-        <p>Escolha uma senha</p>
-        <p>Digite novamente a senha</p>
-        <p><a href="#">Criar conta</a></p>
+       <main class="conta" id="novo">
+        <p class="login">Criar uma conta</p>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div class="usuario">
+                <label for="inome">Digite o seu nome completo</label><br>
+                <input type="text" name="nome" id="inome" placeholder="Nome Completo" required/>
+            </div>
+
+            <div>
+                <label for="iemail">Digite o seu e-mail</label><br>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required/>
+            </div>
+           
+            <div class="content-password">
+                <label for="isen">Escolha uma senha</label><br>
+                <input type="password" name="sen" id="isen" placeholder="Digite uma senha" required/><br>
+                <label for="isen">Digite novamente a senha</label><br>
+                <input type="password" name="sen" id="isen" placeholder="Digite novamente a senha" required/>
+            </div>
+            <input type="submit" value="Criar Conta" class="botao">
+        </form>
         <p><a href="#">Esqueceu a senha?</a></p>
         <p><a href="pag001.html">Já possui cadastro?</a></p>
        </main>  
