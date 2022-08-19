@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="icon.css" />
 
     <script src="senha.js" defer></script>
+    <script src="js.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,7 +21,11 @@
     </header>
     <main class="conta" id="antigo">
       <p class="login">Login</p>
-      <form action="login" method="post" autocomplete="on">
+
+      <!-- adicionar e remover classe escondido para ver como fica -->
+      <p class="messageError escondido">Senha errada</p>
+
+      <form method="post" autocomplete="on">
         <div class="campo">
           <label for="inputUser">Usuário</label>
           <input
@@ -50,7 +55,11 @@
           </div>
         </div>
 
-        <input type="submit" value="Entrar" class="botao botao-entrar" />
+        <input
+          type="submit"
+          value="Entrar"
+          class="botao botao-login-registro"
+        />
       </form>
       <p><a href="#">Esqueceu a senha?</a></p>
       <p><a href="pag002.html">Ainda não possui cadastro?</a></p>

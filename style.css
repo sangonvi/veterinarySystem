@@ -75,7 +75,7 @@ main.conta p a {
 }
 
 main.conta p.login {
-  margin: 20px;
+  margin: 0px 0 20px;
   font-weight: bold;
   font-size: 2em;
   text-shadow: 1px 2px #00000057;
@@ -112,6 +112,10 @@ form input {
   background-color: #e6f4f1;
   padding-left: 7px;
 }
+form input:focus {
+  box-shadow: 0px 0px 6px #64b6cd;
+  outline: none;
+}
 
 .botao {
   background-color: #64b6cd;
@@ -126,9 +130,8 @@ form input {
   background-color: #00c6ff;
   color: black;
 }
-
-.botao-entrar {
-  margin-top: 10px;
+.botao-login-registro {
+  margin: 10px auto;
 }
 /* -----------------------------------------ICONS EYES--------------------------------------------------------- */
 /* ------ICON EYES PASSWORD------- */
@@ -166,4 +169,12 @@ aling items para ficarem na mesma altura*/
 #isen {
   padding-right: 33px;
   box-sizing: border-box;
+}
+
+.messageError {
+  color: red;
+}
+
+.escondido {
+  opacity: 0;
 }

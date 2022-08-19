@@ -1,42 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veterinária</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#">Quem somos</a>
-            <a href="#">Contato</a>
-        </nav>
-       </header> 
-       <main class="conta" id="novo">
-        <p class="login">Criar uma conta</p>
-        <form action="cadastro.php" method="post" autocomplete="on">
-            <div class="usuario">
-                <label for="inome">Digite o seu nome completo</label><br>
-                <input type="text" name="nome" id="inome" placeholder="Nome Completo" required/>
-            </div>
+      <nav>
+        <a href="#">Quem somos</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <main class="conta" id="novo">
+      <p class="login">Criar uma conta</p>
 
-            <div>
-                <label for="iemail">Digite o seu e-mail</label><br>
-                <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required/>
-            </div>
-           
-            <div class="content-password">
-                <label for="isen">Escolha uma senha</label><br>
-                <input type="password" name="sen" id="isen" placeholder="Digite uma senha" required/><br>
-                <label for="isen">Digite novamente a senha</label><br>
-                <input type="password" name="sen" id="isen" placeholder="Digite novamente a senha" required/>
-            </div>
-            <input type="submit" value="Criar Conta" class="botao">
-        </form>
-        <p><a href="#">Esqueceu a senha?</a></p>
-        <p><a href="pag001.html">Já possui cadastro?</a></p>
-       </main>  
-</body>
+      <!-- adicionar e remover classe escondido para ver como fica -->
+      <!-- <p class="messageError escondido">Email ja cadastrado</p> -->
+
+      <form action="login" method="post" autocomplete="on">
+        <div class="campo">
+          <label for="inome">Digite o seu nome completo</label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            placeholder="Nome Completo"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="iemail">Digite o seu e-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label for="inpuPassword">Senha</label>
+
+          <div class="align-icon">
+            <input
+              type="password"
+              name="inpuPassword"
+              id="inpuPassword"
+              placeholder="Digite uma senha"
+              required
+              autocomplete="current-password"
+            />
+
+            <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+          </div>
+
+          <!-- div ou label
+            
+            senha deve  ter pelo menos 6 digitos
+        
+        --></div>
+
+        <div class="campo">
+          <label for="inpuPassword">Confirme sua senha</label>
+
+          <div class="align-icon">
+            <input
+              type="password"
+              name="inpuPassword"
+              id="inpuPassword"
+              placeholder="Digite novamente a sua senha"
+              required
+              autocomplete="current-password"
+            />
+
+            <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          value="Criar Conta"
+          class="botao botao-login-registro"
+        />
+      </form>
+      <p><a href="#">Esqueceu a senha?</a></p>
+      <p><a href="pag001.html">Já possui cadastro?</a></p>
+    </main>
+  </body>
 </html>
