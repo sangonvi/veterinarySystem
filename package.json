@@ -1,0 +1,29 @@
+{
+  "name": "veterinarysystem",
+  "version": "1.0.0",
+  "description": "Experimental project to build a web system if the aim of manage all activities of a fictitious veterinary clinic",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangonvi/veterinarySystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sangonvi/veterinarySystem/issues"
+  },
+  "homepage": "https://github.com/sangonvi/veterinarySystem#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "live-server": "^1.2.2",
+    "serialize": "^0.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

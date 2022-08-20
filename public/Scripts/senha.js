@@ -1,6 +1,5 @@
-var elInputSenha = document.querySelector('input[type=password]') //pega o elemento input da senha
+var elInputSenha = document.querySelectorAll('input[type=password]') //pega o elemento input da senha
 var elInputSenhaOlho = document.getElementById('icon-olho') //pega o icone de olho da senha
-
 //adiciona envento de click no icon de olho
 elInputSenhaOlho.addEventListener('click', () => {
   //se o input for do tipo password, muda para tipo text e a senha sera exibida

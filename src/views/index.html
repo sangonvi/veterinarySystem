@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinária</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/Styles/icon.css" />
+    <link rel="stylesheet" href="/Styles/style.css" />
+
+    <!-- LINK SCRIPT -->
+    <script type="text/javascript" src="/Scripts/jquery-1.2.6.pack.js"></script>
+    <script
+      type="text/javascript"
+      src="/Scripts/jquery.maskedinput-1.1.4.pack.js"
+    ></script>
+    <script src="/Scripts/senha.js" defer></script>
+    <script src="/Scripts/login.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Quem somos</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <main class="conta" id="antigo">
+      <p class="login">Login</p>
+
+      <!-- adicionar e remover classe escondido para ver como fica -->
+      <!-- <p class="messageError escondido">Senha errada</p> -->
+
+      <form method="post" autocomplete="on">
+        <div class="campo">
+          <label for="inputUser">Usuário</label>
+          <input
+            type="text"
+            name="inputUser"
+            id="inputUser"
+            placeholder="E-mail ou nome de usuário"
+            required
+            autocomplete="username"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="inputPassword">Senha</label>
+
+          <div class="align-icon">
+            <input
+              type="password"
+              name="inputPassword"
+              id="inputPassword"
+              placeholder="Digite a sua senha"
+              required
+              autocomplete="current-password"
+            />
+
+            <i class="icon icon-olho" aria-hidden="true" id="icon-olho"></i>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          value="Entrar"
+          id="loginSubmit"
+          class="botao botao-login-registro"
+        />
+      </form>
+      <p><a href="#">Esqueceu a senha?</a></p>
+      <p><a href="cadastro">Ainda não possui cadastro?</a></p>
+    </main>
+  </body>
+</html>
